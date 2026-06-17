@@ -1,0 +1,22 @@
+{
+    "Critical": {
+        "HasFailures": "true",
+        "Total": 2,
+        "Passed": 0,
+        "Failed": 2,
+        "Errored": 0
+    },
+    "NonCritical": {
+        "HasFailures": "false",
+        "Total": 0,
+        "Passed": 0,
+        "Failed": 0,
+        "Errored": 0
+    },
+    "ValidationPackage": {
+        "Name": "treem-sequencing",
+        "Version": "0.0.1",
+        "Summary": "TreeM RNA Sequencing ARC Validation",
+        "Description": "This python package validates ARCs for the TreeM consortium RNA Sequencing."
+    }
+}

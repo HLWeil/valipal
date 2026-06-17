@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="2" tests="2" time="0.0">
+	<testsuite disabled="0" errors="0" failures="2" name="TreeM RNA Sequencing validation tests" skipped="0" tests="2" time="0">
+		<testcase name="Sequencing Type">
+			<failure type="failure" message="No Table with protocol type 'Sequencing' was found in any of the assays."/>
+		</testcase>
+		<testcase name="Sequencing Type">
+			<failure type="failure" message="No Table with protocol type 'Sequencing' was found in any of the assays."/>
+		</testcase>
+	</testsuite>
+</testsuites>
