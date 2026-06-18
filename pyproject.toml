@@ -11,7 +11,7 @@ keywords = [
     "profile crate"
 ]
 dependencies = [
-    
+    anybadge
 ]
 
 [project.urls]
