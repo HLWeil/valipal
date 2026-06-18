@@ -6,6 +6,9 @@
   </PropertyGroup>
   
   <ItemGroup>
+    <Compile Include="avprindex\Globals.fs" />
+    <Compile Include="avprindex\Domain.fs" />
+    <Compile Include="AVPRIndex\Frontmatter.fs" />
     <Compile Include="Helpers.fs" />
     <Compile Include="SimpleJson.fs" />
     <Compile Include="SimpleXml.fs" />
@@ -20,7 +23,6 @@
   <ItemGroup>
     <PackageReference Include="AnyBadge.NET" Version="[2.0.0]" />
     <PackageReference Include="Fable.Pyxpecto" Version="[2.0.0]" />
-    <PackageReference Include="AVPRIndex" Version="[0.4.0]" />
   </ItemGroup>
 
 </Project>
