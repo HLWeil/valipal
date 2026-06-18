@@ -8,6 +8,7 @@
   <ItemGroup>
     <Compile Include="TestRunner.fs" />
     <Compile Include="Serialization.fs" />
+    <Compile Include="Frontmatter.fs" />
     <Compile Include="Main.fs" />
   </ItemGroup>
 

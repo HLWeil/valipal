@@ -8,6 +8,7 @@ let all = testList "All" [
     Serialization.Tests.nUnit
     Serialization.Tests.summaryJson
     TestRunner.Tests.testRunner
+    Frontmatter.Tests.frontmatter
 ]
 
 

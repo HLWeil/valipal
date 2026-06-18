@@ -5,7 +5,7 @@ open System
 open System.Text
 open System.IO
 open System.Security.Cryptography
-open YamlDotNet.Serialization
+open YAMLicious
 
 [<AutoOpen>]
 module Frontmatter = 
@@ -120,10 +120,44 @@ has no correctly formatted Python frontmatter."""
         | FSharpFrontmatter -> FSharp.extractFromString str
         | PythonFrontmatter -> Python.extractFromString str
 
-    let yamlDeserializer() = 
-        DeserializerBuilder()
-            .WithNamingConvention(NamingConventions.PascalCaseNamingConvention.Instance)
-            .Build()
+    let private authorDecoder =
+        Decode.object (fun get ->
+            Author.create(
+                fullName         = get.Required.Field "FullName"        Decode.string,
+                ?Email           = get.Optional.Field "Email"           Decode.string,
+                ?Affiliation     = get.Optional.Field "Affiliation"     Decode.string,
+                ?AffiliationLink = get.Optional.Field "AffiliationLink" Decode.string
+            )
+        )
+
+    let private ontologyAnnotationDecoder =
+        Decode.object (fun get ->
+            OntologyAnnotation.create(
+                name                 = get.Required.Field "Name"                Decode.string,
+                ?TermSourceRef       = get.Optional.Field "TermSourceREF"       Decode.string,
+                ?TermAccessionNumber = get.Optional.Field "TermAccessionNumber" Decode.string
+            )
+        )
+
+    let private metadataDecoder =
+        Decode.object (fun get ->
+            ValidationPackageMetadata.create(
+                name                = get.Required.Field "Name"         Decode.string,
+                summary             = get.Required.Field "Summary"      Decode.string,
+                description         = get.Required.Field "Description"  Decode.string,
+                majorVersion        = get.Required.Field "MajorVersion" Decode.int,
+                minorVersion        = get.Required.Field "MinorVersion" Decode.int,
+                patchVersion        = get.Required.Field "PatchVersion" Decode.int,
+                programmingLanguage = "",
+                ?PreReleaseVersionSuffix    = get.Optional.Field "PreReleaseVersionSuffix"    Decode.string,
+                ?BuildMetadataVersionSuffix = get.Optional.Field "BuildMetadataVersionSuffix" Decode.string,
+                ?Publish            = get.Optional.Field "Publish"         Decode.bool,
+                ?Authors            = get.Optional.Field "Authors"         (Decode.array authorDecoder),
+                ?Tags               = get.Optional.Field "Tags"            (Decode.array ontologyAnnotationDecoder),
+                ?ReleaseNotes       = get.Optional.Field "ReleaseNotes"    Decode.string,
+                ?CQCHookEndpoint    = get.Optional.Field "CQCHookEndpoint" Decode.string
+            )
+        )
 
     type ValidationPackageMetadata with
         
@@ -131,8 +165,7 @@ has no correctly formatted Python frontmatter."""
             let frontmatter = tryExtractFromString lang str
             match frontmatter with
             | Some frontmatter ->
-                let result = 
-                    yamlDeserializer().Deserialize<ValidationPackageMetadata>(frontmatter)
+                let result = frontmatter |> Decode.read |> metadataDecoder
                 result.ProgrammingLanguage <- FrontmatterLanguage.toString lang
                 result
             | None ->
