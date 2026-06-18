@@ -8,7 +8,6 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
 dist/
 downloads/
@@ -222,3 +221,5 @@ __marimo__/
 obj
 bin
 *.slnx
+ARCExpect/py
+ARCExpect.Tests/py
