@@ -1,19 +1,9 @@
 ﻿namespace ARCExpect
 
 open Fable.Pyxpecto
-open System.Text.Json
-open System.Text.Json.Serialization
 open System.IO
 open ARCExpect.Helper
 open AVPRIndex
-
-module JsonOptions =
-    let options =
-        JsonFSharpOptions.Default()
-            .WithSkippableOptionFields() // if option is none, do not include a property, but include it if option is some.
-            .ToJsonSerializerOptions()
-
-
 
 /// <summary>
 /// Represents a brief summary of the result of validating an ARC against a set of validation cases.
@@ -24,7 +14,6 @@ type ValidationResult = {
     Passed: int
     Failed: int
     Errored: int
-    [<JsonIgnore>]
     OriginalRunSummary: TestRunResults option
 } with
     static member create(
@@ -133,12 +122,3 @@ type ValidationSummary = {
             validationPackage = package,
             ?Payload = Payload
         )
-    
-    static member toJson (summary: ValidationSummary) =
-        JsonSerializer.Serialize(summary, JsonOptions.options)
-
-    static member fromJson (json: string) =
-        JsonSerializer.Deserialize<ValidationSummary>(json, JsonOptions.options)
-
-    static member writeJson (path: string) (summary: ValidationSummary) =
-        File.WriteAllText(path, ValidationSummary.toJson summary)

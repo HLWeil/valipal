@@ -83,25 +83,13 @@ type Execute =
         path: string
     ) =  
         fun (validationSummary: ValidationSummary) -> 
-            ValidationSummary.writeJson path validationSummary
+            Serialization.writeJson path validationSummary 
 
     static member JUnitReportCreation(
-        path: string,
-        ?Verbose: bool
+        path: string
     ) =
-        let verbose = defaultArg Verbose false
-
         fun (validationSummary: ValidationSummary) -> 
-            match validationSummary.Critical.OriginalRunSummary, validationSummary.NonCritical.OriginalRunSummary with
-            | None, None ->
-                printfn "No validation results to summarize"
-            | Some criticalResults, None ->
-                writeJUnitSummary verbose path criticalResults
-            | None, Some nonCriticalResults ->
-                writeJUnitSummary verbose path nonCriticalResults
-            | Some criticalResults, Some nonCriticalResults ->
-                combineTestRunSummaries [criticalResults; nonCriticalResults]
-                |> writeJUnitSummary verbose path
+            Serialization.writeJUnitXml path validationSummary
 
     static member BadgeCreation(
         path: string,

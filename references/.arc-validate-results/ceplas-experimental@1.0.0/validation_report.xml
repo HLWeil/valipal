@@ -1,1 +1,606 @@
-﻿<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="fsi"><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.002"><error message="Annotation table TalinumGenomeDraft in Study TalinumGenomeDraft is not connected to any other annotation table" /></testcase><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_13.D derives from a Source or Sample ]" time="0.006" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_14.D derives from a Source or Sample ]" time="0.006" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_56.D derives from a Source or Sample ]" time="0.005" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_61.D derives from a Source or Sample ]" time="0.005" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_11.D derives from a Source or Sample ]" time="0.005" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_12.D derives from a Source or Sample ]" time="0.005" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_15.D derives from a Source or Sample ]" time="0.005" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_16.D derives from a Source or Sample ]" time="0.005" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin derives from a Source or Sample ]" time="0.005" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_55.D derives from a Source or Sample ]" time="0.004" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_62.D derives from a Source or Sample ]" time="0.004" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_65.D derives from a Source or Sample ]" time="0.004" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_66.D derives from a Source or Sample ]" time="0.004" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_04.D derives from a Source or Sample ]" time="0.004" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_25.D derives from a Source or Sample ]" time="0.004" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_26.D derives from a Source or Sample ]" time="0.004" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx derives from a Source or Sample ]" time="0.004" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_04.D derives from a Source or Sample ]" time="0.003" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_15.D derives from a Source or Sample ]" time="0.003" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_16.D derives from a Source or Sample ]" time="0.003" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_03.D derives from a Source or Sample ]" time="0.003" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz derives from a Source or Sample ]" time="0.003" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz derives from a Source or Sample ]" time="0.003" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz derives from a Source or Sample ]" time="0.003" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz derives from a Source or Sample ]" time="0.003" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.002" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.002" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.002" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.002" /><testcase name="[ NonCritical; nonCriticalCases; Data entity studies/TalinumGenomeDraft/resources/Talinum.gm.CDS.nt.fa derives from a Source or Sample ]" time="0.002" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_03.D derives from a Source or Sample ]" time="0.002" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz derives from a Source or Sample ]" time="0.002" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz derives from a Source or Sample ]" time="0.002" /><testcase name="[ Critical; criticalCases; ARC contains any LICENSE file ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_55.D contains at least one of Characteristic, Parameter, Factor ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_62.D contains at least one of Characteristic, Parameter, Factor ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_03.D contains at least one of Characteristic, Parameter, Factor ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_13.D contains at least one of Characteristic, Parameter, Factor ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_14.D contains at least one of Characteristic, Parameter, Factor ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_15.D contains at least one of Characteristic, Parameter, Factor ]" time="0.001" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_26.D contains at least one of Characteristic, Parameter, Factor ]" time="0.001" /><testcase name="[ Critical; criticalCases; ARC contains README ]" time="0.000" /><testcase name="[ Critical; criticalCases; Investigation Facultative-CAM-in-Talinum contains title ]" time="0.000" /><testcase name="[ Critical; criticalCases; Investigation Facultative-CAM-in-Talinum contains description ]" time="0.000" /><testcase name="[ Critical; criticalCases; Investigation Facultative-CAM-in-Talinum contains contact ]" time="0.000" /><testcase name="[ Critical; criticalCases; Contact Dominik Brilhaus contains first name ]" time="0.000" /><testcase name="[ Critical; criticalCases; Contact Dominik Brilhaus contains last name ]" time="0.000" /><testcase name="[ Critical; criticalCases; Contact Andrea Bräutigam contains first name ]" time="0.000" /><testcase name="[ Critical; criticalCases; Contact Andrea Bräutigam contains last name ]" time="0.000" /><testcase name="[ Critical; criticalCases; Contact Tabea Mettler-Altmann contains first name ]" time="0.000" /><testcase name="[ Critical; criticalCases; Contact Tabea Mettler-Altmann contains last name ]" time="0.000" /><testcase name="[ Critical; criticalCases; Contact Klaus Winter contains first name ]" time="0.000" /><testcase name="[ Critical; criticalCases; Contact Klaus Winter contains last name ]" time="0.000" /><testcase name="[ Critical; criticalCases; Contact Andreas Weber contains first name ]" time="0.000" /><testcase name="[ Critical; criticalCases; Contact Andreas Weber contains last name ]" time="0.000" /><testcase name="[ Critical; criticalCases; At least one investigation contact must have email and affiliation ]" time="0.000" /><testcase name="[ Critical; criticalCases; ARC contains at least one study or one assay ]" time="0.000" /><testcase name="[ Critical; criticalCases; Study TalinumGenomeDraft contains annotation table ]" time="0.000" /><testcase name="[ Critical; criticalCases; Table TalinumGenomeDraft of study TalinumGenomeDraft contains basic information ]" time="0.000" /><testcase name="[ Critical; criticalCases; Study TalinumSamples-STRI contains annotation table ]" time="0.000" /><testcase name="[ Critical; criticalCases; Table plant_material of study TalinumSamples-STRI contains basic information ]" time="0.000" /><testcase name="[ Critical; criticalCases; Assay GCqTOF_targets contains annotation table ]" time="0.000" /><testcase name="[ Critical; criticalCases; Table metabolite_extraction of assay GCqTOF_targets contains basic information ]" time="0.000" /><testcase name="[ Critical; criticalCases; Table gas_chromatography of assay GCqTOF_targets contains basic information ]" time="0.000" /><testcase name="[ Critical; criticalCases; Table mass_spec of assay GCqTOF_targets contains basic information ]" time="0.000" /><testcase name="[ Critical; criticalCases; Assay MassHunter_targets contains annotation table ]" time="0.000" /><testcase name="[ Critical; criticalCases; Table mh-quant-results of assay MassHunter_targets contains basic information ]" time="0.000" /><testcase name="[ Critical; criticalCases; Table mh-quant-report of assay MassHunter_targets contains basic information ]" time="0.000" /><testcase name="[ Critical; criticalCases; Assay RNASeq contains annotation table ]" time="0.000" /><testcase name="[ Critical; criticalCases; Table rna_extraction of assay RNASeq contains basic information ]" time="0.000" /><testcase name="[ Critical; criticalCases; Table illumina of assay RNASeq contains basic information ]" time="0.000" /><testcase name="[ Critical; criticalCases; ARC contains data entities ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_03.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_04.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_15.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_16.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_55.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_56.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_61.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_62.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_65.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_66.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_03.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_04.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_11.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_12.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_13.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_14.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_15.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_16.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_25.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_26.D of assay GCqTOF_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_03.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_04.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_15.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_16.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_55.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_56.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_61.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_62.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_65.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_66.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_03.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_04.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_11.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_12.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_13.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_14.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_15.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_16.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_25.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_26.D of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx of assay MassHunter_targets resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz of assay RNASeq resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz of assay RNASeq resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz of assay RNASeq resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz of assay RNASeq resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz of assay RNASeq resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ Critical; criticalCases; Data path assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz of assay RNASeq resolves to local file or folder or a URL ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Dominik Brilhaus contains email ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Dominik Brilhaus contains affiliation ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Dominik Brilhaus contains ORCID ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Andrea Bräutigam contains email ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Andrea Bräutigam contains affiliation ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Andrea Bräutigam contains ORCID ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Tabea Mettler-Altmann contains email ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Tabea Mettler-Altmann contains affiliation ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Tabea Mettler-Altmann contains ORCID ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Klaus Winter contains email ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Klaus Winter contains affiliation ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Klaus Winter contains ORCID ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Andreas Weber contains email ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Andreas Weber contains affiliation ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Contact Andreas Weber contains ORCID ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; At least one investigation contact should have role 'researcher' ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; At least one investigation contact should have role 'principal investigator' ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Study TalinumGenomeDraft contains title ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Study TalinumGenomeDraft contains description ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Study TalinumGenomeDraft contains contacts ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Study TalinumSamples-STRI contains title ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Study TalinumSamples-STRI contains description ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Study TalinumSamples-STRI contains contacts ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay GCqTOF_targets contains title ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay GCqTOF_targets contains description ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Study GCqTOF_targets contains contacts ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay GCqTOF_targets contains top-level metadata measurement type ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay GCqTOF_targets contains top-level metadata technology type ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay GCqTOF_targets contains top-level metadata technology platform ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay MassHunter_targets contains title ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay MassHunter_targets contains description ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Study MassHunter_targets contains contacts ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay MassHunter_targets contains top-level metadata measurement type ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay MassHunter_targets contains top-level metadata technology type ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay MassHunter_targets contains top-level metadata technology platform ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay RNASeq contains title ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay RNASeq contains description ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Study RNASeq contains contacts ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay RNASeq contains top-level metadata measurement type ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay RNASeq contains top-level metadata technology type ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Assay RNASeq contains top-level metadata technology platform ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity studies/TalinumGenomeDraft/resources/Talinum.gm.CDS.nt.fa contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_03.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_04.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_15.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_16.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_56.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_61.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_65.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_66.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_04.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_11.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_12.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_16.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_25.D contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz contains at least one of Characteristic, Parameter, Factor ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table TalinumGenomeDraft contains `Input` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table TalinumGenomeDraft contains `Output` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table TalinumGenomeDraft contains `Protocol` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table plant_material contains `Input` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table plant_material contains `Output` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table plant_material contains `Protocol` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table metabolite_extraction contains `Input` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table metabolite_extraction contains `Output` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table metabolite_extraction contains `Protocol` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table gas_chromatography contains `Input` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table gas_chromatography contains `Output` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table gas_chromatography contains `Protocol` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table mass_spec contains `Input` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table mass_spec contains `Output` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table mass_spec contains `Protocol` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table mh-quant-results contains `Input` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table mh-quant-results contains `Output` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table mh-quant-results contains `Protocol` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table mh-quant-report contains `Input` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table mh-quant-report contains `Output` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table mh-quant-report contains `Protocol` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table rna_extraction contains `Input` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table rna_extraction contains `Output` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table rna_extraction contains `Protocol` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table illumina contains `Input` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table illumina contains `Output` ]" time="0.000" /><testcase name="[ NonCritical; nonCriticalCases; Table illumina contains `Protocol` ]" time="0.000" /></testsuite></testsuites>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite name="fsi">
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.002">
+            <error
+                message="Annotation table TalinumGenomeDraft in Study TalinumGenomeDraft is not connected to any other annotation table" />
+        </testcase>
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_13.D derives from a Source or Sample ]"
+            time="0.006" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_14.D derives from a Source or Sample ]"
+            time="0.006" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_56.D derives from a Source or Sample ]"
+            time="0.005" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_61.D derives from a Source or Sample ]"
+            time="0.005" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_11.D derives from a Source or Sample ]"
+            time="0.005" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_12.D derives from a Source or Sample ]"
+            time="0.005" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_15.D derives from a Source or Sample ]"
+            time="0.005" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_16.D derives from a Source or Sample ]"
+            time="0.005" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin derives from a Source or Sample ]"
+            time="0.005" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_55.D derives from a Source or Sample ]"
+            time="0.004" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_62.D derives from a Source or Sample ]"
+            time="0.004" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_65.D derives from a Source or Sample ]"
+            time="0.004" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_66.D derives from a Source or Sample ]"
+            time="0.004" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_04.D derives from a Source or Sample ]"
+            time="0.004" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_25.D derives from a Source or Sample ]"
+            time="0.004" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_26.D derives from a Source or Sample ]"
+            time="0.004" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx derives from a Source or Sample ]"
+            time="0.004" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_04.D derives from a Source or Sample ]"
+            time="0.003" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_15.D derives from a Source or Sample ]"
+            time="0.003" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_16.D derives from a Source or Sample ]"
+            time="0.003" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_03.D derives from a Source or Sample ]"
+            time="0.003" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz derives from a Source or Sample ]"
+            time="0.003" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz derives from a Source or Sample ]"
+            time="0.003" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz derives from a Source or Sample ]"
+            time="0.003" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz derives from a Source or Sample ]"
+            time="0.003" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.002" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.002" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.002" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.002" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity studies/TalinumGenomeDraft/resources/Talinum.gm.CDS.nt.fa derives from a Source or Sample ]"
+            time="0.002" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_03.D derives from a Source or Sample ]"
+            time="0.002" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz derives from a Source or Sample ]"
+            time="0.002" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz derives from a Source or Sample ]"
+            time="0.002" />
+        <testcase name="[ Critical; criticalCases; ARC contains any LICENSE file ]" time="0.001" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.001" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.001" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.001" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.001" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.001" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.001" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_55.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.001" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_62.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.001" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_03.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.001" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_13.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.001" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_14.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.001" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_15.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.001" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_26.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.001" />
+        <testcase name="[ Critical; criticalCases; ARC contains README ]" time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Investigation Facultative-CAM-in-Talinum contains title ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Investigation Facultative-CAM-in-Talinum contains description ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Investigation Facultative-CAM-in-Talinum contains contact ]"
+            time="0.000" />
+        <testcase name="[ Critical; criticalCases; Contact Dominik Brilhaus contains first name ]"
+            time="0.000" />
+        <testcase name="[ Critical; criticalCases; Contact Dominik Brilhaus contains last name ]"
+            time="0.000" />
+        <testcase name="[ Critical; criticalCases; Contact Andrea Bräutigam contains first name ]"
+            time="0.000" />
+        <testcase name="[ Critical; criticalCases; Contact Andrea Bräutigam contains last name ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Contact Tabea Mettler-Altmann contains first name ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Contact Tabea Mettler-Altmann contains last name ]"
+            time="0.000" />
+        <testcase name="[ Critical; criticalCases; Contact Klaus Winter contains first name ]"
+            time="0.000" />
+        <testcase name="[ Critical; criticalCases; Contact Klaus Winter contains last name ]"
+            time="0.000" />
+        <testcase name="[ Critical; criticalCases; Contact Andreas Weber contains first name ]"
+            time="0.000" />
+        <testcase name="[ Critical; criticalCases; Contact Andreas Weber contains last name ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; At least one investigation contact must have email and affiliation ]"
+            time="0.000" />
+        <testcase name="[ Critical; criticalCases; ARC contains at least one study or one assay ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Study TalinumGenomeDraft contains annotation table ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Table TalinumGenomeDraft of study TalinumGenomeDraft contains basic information ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Study TalinumSamples-STRI contains annotation table ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Table plant_material of study TalinumSamples-STRI contains basic information ]"
+            time="0.000" />
+        <testcase name="[ Critical; criticalCases; Assay GCqTOF_targets contains annotation table ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Table metabolite_extraction of assay GCqTOF_targets contains basic information ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Table gas_chromatography of assay GCqTOF_targets contains basic information ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Table mass_spec of assay GCqTOF_targets contains basic information ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Assay MassHunter_targets contains annotation table ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Table mh-quant-results of assay MassHunter_targets contains basic information ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Table mh-quant-report of assay MassHunter_targets contains basic information ]"
+            time="0.000" />
+        <testcase name="[ Critical; criticalCases; Assay RNASeq contains annotation table ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Table rna_extraction of assay RNASeq contains basic information ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Table illumina of assay RNASeq contains basic information ]"
+            time="0.000" />
+        <testcase name="[ Critical; criticalCases; ARC contains data entities ]" time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_03.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_04.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_15.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_16.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_55.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_56.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_61.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_62.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_65.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_66.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_03.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_04.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_11.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_12.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_13.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_14.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_15.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_16.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_25.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_26.D of assay GCqTOF_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_03.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_04.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_15.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_16.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_55.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_56.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_61.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_62.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_65.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150112_66.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_03.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_04.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_11.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_12.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_13.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_14.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_15.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_16.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_25.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/GCqTOF_targets/dataset/150115_26.D of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx of assay MassHunter_targets resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz of assay RNASeq resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz of assay RNASeq resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz of assay RNASeq resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz of assay RNASeq resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz of assay RNASeq resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase
+            name="[ Critical; criticalCases; Data path assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz of assay RNASeq resolves to local file or folder or a URL ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Contact Dominik Brilhaus contains email ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Contact Dominik Brilhaus contains affiliation ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Contact Dominik Brilhaus contains ORCID ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Contact Andrea Bräutigam contains email ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Contact Andrea Bräutigam contains affiliation ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Contact Andrea Bräutigam contains ORCID ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Contact Tabea Mettler-Altmann contains email ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Contact Tabea Mettler-Altmann contains affiliation ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Contact Tabea Mettler-Altmann contains ORCID ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Contact Klaus Winter contains email ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Contact Klaus Winter contains affiliation ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Contact Klaus Winter contains ORCID ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Contact Andreas Weber contains email ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Contact Andreas Weber contains affiliation ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Contact Andreas Weber contains ORCID ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; At least one investigation contact should have role 'researcher' ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; At least one investigation contact should have role 'principal investigator' ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Study TalinumGenomeDraft contains title ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Study TalinumGenomeDraft contains description ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Study TalinumGenomeDraft contains contacts ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Study TalinumSamples-STRI contains title ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Study TalinumSamples-STRI contains description ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Study TalinumSamples-STRI contains contacts ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Assay GCqTOF_targets contains title ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Assay GCqTOF_targets contains description ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Study GCqTOF_targets contains contacts ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Assay GCqTOF_targets contains top-level metadata measurement type ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Assay GCqTOF_targets contains top-level metadata technology type ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Assay GCqTOF_targets contains top-level metadata technology platform ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Assay MassHunter_targets contains title ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Assay MassHunter_targets contains description ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Study MassHunter_targets contains contacts ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Assay MassHunter_targets contains top-level metadata measurement type ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Assay MassHunter_targets contains top-level metadata technology type ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Assay MassHunter_targets contains top-level metadata technology platform ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Assay RNASeq contains title ]" time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Assay RNASeq contains description ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Study RNASeq contains contacts ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Assay RNASeq contains top-level metadata measurement type ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Assay RNASeq contains top-level metadata technology type ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Assay RNASeq contains top-level metadata technology platform ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; ARC annotation tables are connected ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity studies/TalinumGenomeDraft/resources/Talinum.gm.CDS.nt.fa contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_03.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_04.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_15.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_16.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_56.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_61.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_65.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150112_66.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_04.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_11.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_12.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_16.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/GCqTOF_targets/dataset/150115_25.D contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/MassHunter_targets/dataset/QuantResults/22-0005_exp001.batch_a.bin.batch.bin contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/MassHunter_targets/dataset/QuantReports/22-0005_exp001.batch_a.bin/190614_QuantReport_ISTD_DB.xlsx contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_099_CAMMD_CTTGTA_L001_R1_001.fastq.gz contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_103_CAMMD_AGTCAA_L001_R1_001.fastq.gz contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_161_reC3MD_GTCCGC_L001_R1_001.fastq.gz contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_163_reC3MD_GTGAAA_L001_R1_001.fastq.gz contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Data entity assays/RNASeq/dataset/DB_165_re-C3MD_GTGAAA_L002_R1_001.fastq.gz contains at least one of Characteristic, Parameter, Factor ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Table TalinumGenomeDraft contains `Input` ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Table TalinumGenomeDraft contains `Output` ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Table TalinumGenomeDraft contains `Protocol` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table plant_material contains `Input` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table plant_material contains `Output` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table plant_material contains `Protocol` ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Table metabolite_extraction contains `Input` ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Table metabolite_extraction contains `Output` ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Table metabolite_extraction contains `Protocol` ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Table gas_chromatography contains `Input` ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Table gas_chromatography contains `Output` ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Table gas_chromatography contains `Protocol` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table mass_spec contains `Input` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table mass_spec contains `Output` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table mass_spec contains `Protocol` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table mh-quant-results contains `Input` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table mh-quant-results contains `Output` ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Table mh-quant-results contains `Protocol` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table mh-quant-report contains `Input` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table mh-quant-report contains `Output` ]"
+            time="0.000" />
+        <testcase
+            name="[ NonCritical; nonCriticalCases; Table mh-quant-report contains `Protocol` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table rna_extraction contains `Input` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table rna_extraction contains `Output` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table rna_extraction contains `Protocol` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table illumina contains `Input` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table illumina contains `Output` ]"
+            time="0.000" />
+        <testcase name="[ NonCritical; nonCriticalCases; Table illumina contains `Protocol` ]"
+            time="0.000" />
+    </testsuite>
+</testsuites>
