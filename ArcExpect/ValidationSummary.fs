@@ -1,9 +1,10 @@
 ﻿namespace ARCExpect
 
-open Expecto
+open Fable.Pyxpecto
 open System.Text.Json
 open System.Text.Json.Serialization
 open System.IO
+open ARCExpect.Helper
 open AVPRIndex
 
 module JsonOptions =
@@ -11,6 +12,8 @@ module JsonOptions =
         JsonFSharpOptions.Default()
             .WithSkippableOptionFields() // if option is none, do not include a property, but include it if option is some.
             .ToJsonSerializerOptions()
+
+
 
 /// <summary>
 /// Represents a brief summary of the result of validating an ARC against a set of validation cases.
@@ -22,7 +25,7 @@ type ValidationResult = {
     Failed: int
     Errored: int
     [<JsonIgnore>]
-    OriginalRunSummary: Impl.TestRunSummary option
+    OriginalRunSummary: TestRunResults option
 } with
     static member create(
         hasFailures: bool,
@@ -30,7 +33,7 @@ type ValidationResult = {
         passed: int,
         failed: int,
         errored: int,
-        ?OriginalRunSummary: Impl.TestRunSummary
+        ?OriginalRunSummary: TestRunResults
     ) = {
         HasFailures = hasFailures
         Total = total
@@ -40,7 +43,7 @@ type ValidationResult = {
         OriginalRunSummary = OriginalRunSummary
     }
     
-    static member create (total: int, passed: int, failed: int, errored: int, ?OriginalRunSummary: Impl.TestRunSummary) =
+    static member create (total: int, passed: int, failed: int, errored: int, ?OriginalRunSummary: TestRunResults) =
         ValidationResult.create(
             hasFailures = (failed > 0 || errored > 0),
             total = total,
@@ -50,15 +53,15 @@ type ValidationResult = {
             ?OriginalRunSummary = OriginalRunSummary
         )
 
-    static member ofExpectoTestRunSummary (summary: Impl.TestRunSummary) =
+    static member ofExpectoTestRunSummary (summary: TestRunResults) =
 
-        let totalTests = summary.errored @ summary.failed @ summary.ignored @ summary.passed
+        let totalTests = summary.Errored @ summary.Failed @ summary.Ignored @ summary.Passed
 
         ValidationResult.create(
             total = totalTests.Length,
-            passed = summary.passed.Length,
-            errored = summary.errored.Length,
-            failed = summary.failed.Length,
+            passed = summary.Passed.Length,
+            errored = summary.Errored.Length,
+            failed = summary.Failed.Length,
             OriginalRunSummary = summary
         )
 
@@ -119,8 +122,8 @@ type ValidationSummary = {
         Payload = Payload
     }
     static member ofExpectoTestRunSummaries (
-        criticalSummary: Impl.TestRunSummary,
-        nonCriticalSummary: Impl.TestRunSummary,
+        criticalSummary: TestRunResults,
+        nonCriticalSummary: TestRunResults,
         package: ValidationPackageSummary,
         ?Payload: Dictionary<string, obj>
     ) =

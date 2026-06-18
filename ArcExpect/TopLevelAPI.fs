@@ -1,7 +1,7 @@
 ﻿namespace ARCExpect
 
 open AnyBadge.NET
-open Expecto
+open Fable.Pyxpecto.Model
 open System.IO
 open AVPRIndex
 
@@ -15,8 +15,8 @@ type Setup =
 
     static member ValidationPackage(
         metadata: ValidationPackageMetadata,
-        ?CriticalValidationCases: Test list,
-        ?NonCriticalValidationCases: Test list
+        ?CriticalValidationCases: TestCase list,
+        ?NonCriticalValidationCases: TestCase list
     ) =
         ARCValidationPackage.create(
             metadata = metadata,
@@ -36,8 +36,8 @@ type Setup =
         ?Authors: Author array,
         ?Tags: OntologyAnnotation array,
         ?ReleaseNotes: string,
-        ?CriticalValidationCases: Test list,
-        ?NonCriticalValidationCases: Test list,
+        ?CriticalValidationCases: TestCase list,
+        ?NonCriticalValidationCases: TestCase list,
         ?CQCHookEndpoint: string
     ) =
         Setup.ValidationPackage(
@@ -69,8 +69,8 @@ type Execute =
     ) =
         fun (arcValidationPackage: ARCValidationPackage) ->
 
-            let criticalResults = performTest arcValidationPackage.CriticalValidationCases
-            let nonCriticalResults = performTest arcValidationPackage.NonCriticalValidationCases
+            let criticalResults = PyxpectoRunner.runTestsWithResults arcValidationPackage.CriticalValidationCases
+            let nonCriticalResults = PyxpectoRunner.runTestsWithResults arcValidationPackage.NonCriticalValidationCases
         
             ValidationSummary.ofExpectoTestRunSummaries(
                 criticalSummary = criticalResults,

@@ -1,18 +1,20 @@
 ﻿namespace ARCExpect
 
 open AVPRIndex
-open Expecto
+open Fable.Pyxpecto
+
+open Fable.Pyxpecto.Model
 
 type ARCValidationPackage = 
     {
         Metadata: ValidationPackageMetadata
-        CriticalValidationCases: Test
-        NonCriticalValidationCases: Test
+        CriticalValidationCases: TestCase
+        NonCriticalValidationCases: TestCase
     } with
         static member create (
             metadata: ValidationPackageMetadata,
-            criticalValidationCases: Test,
-            nonCriticalValidationCases: Test
+            criticalValidationCases: TestCase,
+            nonCriticalValidationCases: TestCase
         ) =
             {
                 Metadata = metadata
@@ -22,8 +24,8 @@ type ARCValidationPackage =
 
         static member create (
             metadata: ValidationPackageMetadata,
-            criticalValidationCasesList: Test list,
-            nonCriticalValidationCasesList: Test list,
+            criticalValidationCasesList: TestCase list,
+            nonCriticalValidationCasesList: TestCase list,
             ?CQCHookEndpoint: string
         ) =
             let criticalCases = testList "Critical" criticalValidationCasesList
@@ -37,8 +39,8 @@ type ARCValidationPackage =
 
         static member create (
             metadata: ValidationPackageMetadata,
-            ?CriticalValidationCasesList: Test list,
-            ?NonCriticalValidationCasesList: Test list
+            ?CriticalValidationCasesList: TestCase list,
+            ?NonCriticalValidationCasesList: TestCase list
         ) =
             ARCValidationPackage.create(
                 metadata = metadata, 

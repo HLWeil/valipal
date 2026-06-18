@@ -2,8 +2,6 @@
 
 open AnyBadge.NET
 
-open Expecto
-
 type BadgeCreation =
 
     static member ofTestResults(
@@ -13,9 +11,9 @@ type BadgeCreation =
         ?DefaultColor: Color
     ) =
         
-        fun (testResults: Impl.TestRunSummary) ->
+        fun (testResults: TestRunResults) ->
 
-            let max = testResults.passed.Length + testResults.failed.Length
+            let max = testResults.Passed.Length + testResults.Failed.Length
 
             let thresholds = 
                 Thresholds
@@ -33,7 +31,7 @@ type BadgeCreation =
                 label = labelText,
                 defaultColor = (DefaultColor |> Option.defaultValue (Color.fromString Defaults.DEFAULT_COLOR) ),
                 Thresholds = thresholds,
-                value = testResults.passed.Length,
+                value = testResults.Passed.Length,
                 ValueSuffix = valueSuffix
             )
 
