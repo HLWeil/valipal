@@ -64,20 +64,30 @@ type Execute =
 
 // ------------------ New API with ARCValidationPackage, metadata support and custom summaries ------------------
     
+    static member ValidationAsync (
+        ?Payload: Dictionary<string, obj>
+    ) =
+        fun (arcValidationPackage: ARCValidationPackage) ->
+            async {
+                let! criticalResults = PyxpectoRunner.runTestsWithResultsAsync arcValidationPackage.CriticalValidationCases
+                let! nonCriticalResults = PyxpectoRunner.runTestsWithResultsAsync arcValidationPackage.NonCriticalValidationCases
+
+                return
+                    ValidationSummary.ofExpectoTestRunSummaries(
+                        criticalSummary = criticalResults,
+                        nonCriticalSummary = nonCriticalResults,
+                        package = ValidationPackageSummary.create(arcValidationPackage.Metadata),
+                        ?Payload = Payload
+                    )
+            }
+
     static member Validation (
         ?Payload: Dictionary<string, obj>
     ) =
         fun (arcValidationPackage: ARCValidationPackage) ->
-
-            let criticalResults = PyxpectoRunner.runTestsWithResults arcValidationPackage.CriticalValidationCases
-            let nonCriticalResults = PyxpectoRunner.runTestsWithResults arcValidationPackage.NonCriticalValidationCases
-        
-            ValidationSummary.ofExpectoTestRunSummaries(
-                criticalSummary = criticalResults,
-                nonCriticalSummary = nonCriticalResults,
-                package = ValidationPackageSummary.create(arcValidationPackage.Metadata),
-                ?Payload = Payload
-            )
+            arcValidationPackage
+            |> Execute.ValidationAsync(?Payload = Payload)
+            |> Async.RunSynchronously
 
     static member SummaryCreation(
         path: string

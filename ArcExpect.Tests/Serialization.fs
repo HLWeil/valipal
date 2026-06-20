@@ -27,8 +27,18 @@ let private skipSuite =
         ptestCase "sk1" <| fun () -> ()
     ]
 
+let private makeResultsAsync criticalSuite nonCriticalSuite =
+    async {
+        let! crit = PyxpectoRunner.runTestsWithResultsAsync criticalSuite
+        let! nonCrit = PyxpectoRunner.runTestsWithResultsAsync nonCriticalSuite
+        return
+            ValidationSummary.ofExpectoTestRunSummaries(
+                crit, nonCrit,
+                ValidationPackageSummary.create("test-pkg", "1.2.3", "A test package", "For unit testing"))
+    }
+
 let private makeResults criticalSuite nonCriticalSuite =
-    let crit    = PyxpectoRunner.runTestsWithResults criticalSuite
+    let crit = PyxpectoRunner.runTestsWithResults criticalSuite
     let nonCrit = PyxpectoRunner.runTestsWithResults nonCriticalSuite
     ValidationSummary.ofExpectoTestRunSummaries(
         crit, nonCrit,
@@ -109,9 +119,9 @@ let summaryJson = testList "summaryJson" [
     ]
 
     testList "special characters" [
-        testCase "newline and quote in description are escaped" <| fun () ->
-            let crit = PyxpectoRunner.runTestsWithResults passSuite
-            let nonCrit = PyxpectoRunner.runTestsWithResults (testList "s" [])
+        testCaseAsync "newline and quote in description are escaped" <| async {
+            let! crit = PyxpectoRunner.runTestsWithResultsAsync passSuite
+            let! nonCrit = PyxpectoRunner.runTestsWithResultsAsync (testList "s" [])
             let summary =
                 ValidationSummary.ofExpectoTestRunSummaries(
                     crit, nonCrit,
@@ -119,6 +129,7 @@ let summaryJson = testList "summaryJson" [
             let json = Serialization.toJson summary
             Expect.isTrue (json.Contains "\\n")  "newline escaped"
             Expect.isTrue (json.Contains "\\\"") "quote escaped"
+        }
     ]
 ]
 
@@ -196,38 +207,42 @@ let jUnit = testList "jUnit" [
     ]
 
     testList "skipped tests" [
-        testCase "skipped testcase has skipped element" <| fun () ->
-            let skipSummary = makeResults skipSuite skipSuite
+        testCaseAsync "skipped testcase has skipped element" <| async {
+            let! skipSummary = makeResultsAsync skipSuite skipSuite
             let xml = Serialization.toJUnitXml skipSummary
             Expect.isTrue (xml.Contains "<skipped") "skipped element present"
+        }
 
-        testCase "skipped count attribute is correct" <| fun () ->
-            let skipSummary = makeResults skipSuite skipSuite
+        testCaseAsync "skipped count attribute is correct" <| async {
+            let! skipSummary = makeResultsAsync skipSuite skipSuite
             let xml = Serialization.toJUnitXml skipSummary
             // 1 crit + 1 nonCrit = 2
             Expect.isTrue (xml.Contains "skipped=\"2\"") "skipped=2"
+        }
     ]
 
     testList "XML escaping" [
-        testCase "special characters in test names are escaped" <| fun () ->
+        testCaseAsync "special characters in test names are escaped" <| async {
             let specialSuite =
                 testList "s" [
                     testCase "name with <angle> & \"quotes\"" <| fun () -> ()
                 ]
-            let summary = makeResults specialSuite (testList "s" [])
+            let! summary = makeResultsAsync specialSuite (testList "s" [])
             let xml = Serialization.toJUnitXml summary
             Expect.isFalse (xml.Contains "<angle>")  "raw < not present"
             Expect.isTrue  (xml.Contains "&lt;")     "< escaped"
             Expect.isTrue  (xml.Contains "&amp;")    "& escaped"
+        }
 
-        testCase "special characters in failure messages are escaped" <| fun () ->
+        testCaseAsync "special characters in failure messages are escaped" <| async {
             let specialFail =
                 testList "s" [
                     testCase "f" <| fun () -> Expect.equal "<bad>" "ok" "msg with <bad> & stuff"
                 ]
-            let summary = makeResults specialFail (testList "s" [])
+            let! summary = makeResultsAsync specialFail (testList "s" [])
             let xml = Serialization.toJUnitXml summary
             Expect.isTrue (xml.Contains "&lt;bad&gt;") "< and > in message escaped"
+        }
     ]
 ]
 
@@ -320,22 +335,25 @@ let nUnit = testList "nUnit" [
     ]
 
     testList "ignored test attributes" [
-        testCase "ignored test-case has executed=False result=Ignored" <| fun () ->
-            let skipSummary = makeResults skipSuite skipSuite
+        testCaseAsync "ignored test-case has executed=False result=Ignored" <| async {
+            let! skipSummary = makeResultsAsync skipSuite skipSuite
             let xml = Serialization.toNUnitXml skipSummary
             Expect.isTrue (xml.Contains "executed=\"False\"") "not executed"
             Expect.isTrue (xml.Contains "result=\"Ignored\"") "result Ignored"
+        }
 
-        testCase "ignored test-case has reason/message child" <| fun () ->
-            let skipSummary = makeResults skipSuite skipSuite
+        testCaseAsync "ignored test-case has reason/message child" <| async {
+            let! skipSummary = makeResultsAsync skipSuite skipSuite
             let xml = Serialization.toNUnitXml skipSummary
             Expect.isTrue (xml.Contains "<reason")  "reason element"
             Expect.isTrue (xml.Contains "<message") "message element"
+        }
 
-        testCase "ignored count in root matches" <| fun () ->
-            let skipSummary = makeResults skipSuite skipSuite
+        testCaseAsync "ignored count in root matches" <| async {
+            let! skipSummary = makeResultsAsync skipSuite skipSuite
             let xml = Serialization.toNUnitXml skipSummary
             Expect.isTrue (xml.Contains "ignored=\"2\"") "ignored=2"
+        }
     ]
 
     testList "total count" [

@@ -59,7 +59,7 @@ module PyxpectoRunner =
     /// Unlike the standard runner, this function does not throw or call <c>Environment.Exit</c> on failures or errors.
     /// Pending and unfocused tests are recorded as <see cref="TestOutcome.Ignored"/>.
     /// </summary>
-    let runTestsWithResults (tests: Fable.Pyxpecto.Model.TestCase) : TestRunResults =
+    let runTestsWithResultsAsync (tests: Fable.Pyxpecto.Model.TestCase) : Async<TestRunResults> =
         let runner = CustomTestRunner(tests)
         let runTests, pendingTests, unfocusedTests = sortTests runner
 
@@ -76,4 +76,16 @@ module PyxpectoRunner =
                 return entries |> Seq.toList
             }
 
-        { Entries = run |> Async.RunSynchronously }
+        async {
+            let! entries = run
+            return { Entries = entries }
+        }
+
+    /// Runs the given test suite synchronously.
+    ///
+    /// Use <see cref="runTestsWithResultsAsync"/> when the caller is already
+    /// executing in an asynchronous context (for example, a Pyxpecto test case
+    /// transpiled to Python). Python cannot start a second event loop on the
+    /// thread that owns the active loop.
+    let runTestsWithResults (tests: Fable.Pyxpecto.Model.TestCase) : TestRunResults =
+        runTestsWithResultsAsync tests |> Async.RunSynchronously
