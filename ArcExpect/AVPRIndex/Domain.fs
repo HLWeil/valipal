@@ -1,9 +1,7 @@
 namespace AVPRIndex
 
 open System
-open System.IO
-open System.Text
-open System.Security.Cryptography
+open ARCExpect.Helper
 
 [<AutoOpen>]
 module Domain =
@@ -294,14 +292,6 @@ module Domain =
             |> Option.map SemVer.toString
             |> Option.get
 
-    module Hash =
-        let hashFile (path: string) =
-            use sha256 = System.Security.Cryptography.SHA256.Create()
-            use stream = System.IO.File.OpenRead(path)
-            sha256.ComputeHash(stream)
-            |> Array.map (fun b -> b.ToString("x2"))
-            |> String.concat ""
-
     type ValidationPackageIndex =
         {
             RepoPath: string
@@ -331,7 +321,7 @@ module Domain =
             ) = 
                 ValidationPackageIndex.create(
                     repoPath = repoPath,
-                    fileName = Path.GetFileName(repoPath),
+                    fileName = Path.getFileName(repoPath),
                     lastUpdated = lastUpdated,
                     contentHash = Hash.hashFile repoPath,
                     metadata = metadata

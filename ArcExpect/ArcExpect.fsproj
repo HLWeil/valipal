@@ -6,10 +6,10 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <Compile Include="avprindex\Globals.fs" />
-    <Compile Include="avprindex\Domain.fs" />
-    <Compile Include="AVPRIndex\Frontmatter.fs" />
     <Compile Include="Helpers.fs" />
+    <Compile Include="AVPRIndex\Globals.fs" />
+    <Compile Include="AVPRIndex\Domain.fs" />
+    <Compile Include="AVPRIndex\Frontmatter.fs" />
     <Compile Include="SimpleJson.fs" />
     <Compile Include="SimpleXml.fs" />
     <Compile Include="PyxpectoRunner.fs" />

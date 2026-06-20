@@ -3,6 +3,100 @@
 open System
 open Fable.Pyxpecto
 
+
+
+//#if FABLE_COMPILER_PYTHON
+open Fable.Core.PyInterop
+
+importAll "shutil"
+importAll "os"
+import "Path" "pathlib"
+importAll "hashlib"
+//#endif
+
+
+
+
+
+
+
+
+
+module File = 
+    let readAllText (path : string) : string =
+        #if FABLE_COMPILER_PYTHON
+        emitPyExpr (path) "Path(path).read_text()"
+        #else
+        System.IO.File.ReadAllText path
+        #endif
+
+module Directory = 
+
+    let exists (path : string) : bool =
+        #if FABLE_COMPILER_PYTHON
+        emitPyExpr (path) "Path(path).is_dir()"
+        #else
+        System.IO.Directory.Exists path
+        #endif
+
+    let create (path : string) : unit =
+        #if FABLE_COMPILER_PYTHON
+        emitPyExpr (path) "Path(path).mkdir(parents=True, exist_ok=True)"
+        #else
+        System.IO.Directory.CreateDirectory path |> ignore
+        #endif
+
+    let ensure (path : string) : unit =
+        if not (exists path) then
+            create path
+
+module Path = 
+
+    let [<Literal>] PathSeperator = '/'
+    let [<Literal>] PathSeperatorWindows = '\\'
+    let seperators = [|PathSeperator; PathSeperatorWindows|]
+
+    let combine (path1 : string) (path2 : string) : string =
+        let path1_trimmed = path1.TrimEnd(seperators)
+        let path2_trimmed = path2.TrimStart(seperators)
+        let combined = path1_trimmed + string PathSeperator + path2_trimmed
+        combined // should we trim any excessive path seperators?
+
+    let getFileName (path : string) : string =
+        #if FABLE_COMPILER_PYTHON
+        emitPyExpr (path) "Path(path).name"
+        #else
+        System.IO.Path.GetFileName path
+        #endif
+
+    let getExtension (path : string) : string =
+        #if FABLE_COMPILER_PYTHON
+        emitPyExpr (path) "Path(path).suffix"
+        #else
+        System.IO.Path.GetExtension path
+        #endif
+
+module Hash =
+    let hashFile (path: string) =
+
+        #if FABLE_COMPILER_PYTHON
+        emitPyExpr (path) """h = hashlib.sha256()
+with open(path, "rb") as f:
+    for chunk in iter(lambda: f.read(8192), b""):
+        h.update(chunk)
+h.hexdigest()
+"""     
+        #else
+        use sha256 = System.Security.Cryptography.SHA256.Create()
+        use stream = System.IO.File.OpenRead(path)
+        sha256.ComputeHash(stream)
+        |> Array.map (fun b -> b.ToString("x2"))
+        |> String.concat ""
+        #endif
+
+
+
+
 module String =
     
     /// Checks whether the given text starts with the given prefix
@@ -263,3 +357,5 @@ module String =
             while i < str.Length && predicate str.[i] do i <- i + 1
             skip i str
 
+    let replaceLineEndings (newLine: string) (str: string) =
+        str.Replace("\r\n", "\n").Replace("\r", "\n").Replace("\n", newLine)

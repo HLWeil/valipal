@@ -2,10 +2,8 @@
 
 open Domain
 open System
-open System.Text
-open System.IO
-open System.Security.Cryptography
 open YAMLicious
+open ARCExpect.Helper
 
 [<AutoOpen>]
 module Frontmatter = 
@@ -44,7 +42,7 @@ module Frontmatter =
             str.StartsWith(frontmatterBindingStart, StringComparison.Ordinal) && str.Contains(frontmatterBindingEnd)
 
         let tryExtractFromString (str: string) =
-            let norm = str.ReplaceLineEndings("\n")
+            let norm = String.replaceLineEndings "\n" str
             if containsCommentFrontmatter norm then
                 norm.Substring(
                     frontMatterCommentStart.Length, 
@@ -86,7 +84,7 @@ has no correctly formatted FSharp frontmatter."""
             str.StartsWith(frontmatterBindingStart, StringComparison.Ordinal) && str.Contains(frontmatterBindingEnd)
 
         let tryExtractFromString (str: string) =
-            let norm = str.ReplaceLineEndings("\n")
+            let norm = String.replaceLineEndings "\n" str
             if containsCommentFrontmatter norm then
                 norm.Substring(
                     frontMatterCommentStart.Length, 
@@ -187,13 +185,13 @@ has no correctly formatted {lang}."""
         static member extractFromScript (scriptPath: string) =
 
             let lang = 
-                match Path.GetExtension(scriptPath).ToLowerInvariant() with
+                match Path.getExtension(scriptPath).ToLowerInvariant() with
                 | ".fsx" -> FrontmatterLanguage.FSharpFrontmatter
                 | ".py" -> FrontmatterLanguage.PythonFrontmatter
                 | ext -> failwith $"unsupported script extension: {ext}"
 
             scriptPath
-            |> File.ReadAllText
+            |> File.readAllText
             |> ValidationPackageMetadata.extractFromString lang
 
         static member tryExtractFromScript (scriptPath: string) =

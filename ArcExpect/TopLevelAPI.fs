@@ -2,7 +2,7 @@
 
 open AnyBadge.NET
 open Fable.Pyxpecto.Model
-open System.IO
+open ARCExpect.Helper
 open AVPRIndex
 
 type Setup =
@@ -123,12 +123,14 @@ type Execute =
 
             let foldername = $"{arcValidationPackage.Metadata.Name}@{ValidationPackageMetadata.getSemanticVersionString arcValidationPackage.Metadata}"
 
-            let resultFolder = Path.Combine(basePath, ".arc-validate-results", foldername)
-            let summaryPath = Path.Combine(resultFolder, "validation_summary.json")
-            let badgePath = Path.Combine(resultFolder, "badge.svg")
-            let jUnitPath = Path.Combine(resultFolder, "validation_report.xml")
+            let resultFolder = 
+                Path.combine ".arc-validate-results" foldername
+                |> Path.combine basePath 
+            let summaryPath = Path.combine resultFolder "validation_summary.json"
+            let badgePath = Path.combine resultFolder "badge.svg"
+            let jUnitPath = Path.combine resultFolder "validation_report.xml"
 
-            Directory.CreateDirectory(resultFolder) |> ignore
+            Directory.ensure resultFolder |> ignore
 
             let results = 
                 arcValidationPackage
@@ -144,80 +146,3 @@ type Execute =
                 ?Thresholds = Thresholds, 
                 ?DefaultColor = DefaultColor
             )
-
-// ------------------ Legacy API without ARCValidationPackage, metadata, or custom Summaries ------------------
-
-    //static member Validation (validationCases: Test) = performTest validationCases
-
-    //static member JUnitSummaryCreation(
-    //    path: string,
-    //    ?Verbose: bool
-    //) =
-    //    let verbose = defaultArg Verbose false
-    //    fun (validationResults: Impl.TestRunSummary) -> writeJUnitSummary verbose path validationResults
-
-    //static member BadgeCreation(
-    //    path: string,
-    //    labelText: string,
-    //    ?ValueSuffix: string,
-    //    ?Thresholds: Map<int, Color>,
-    //    ?DefaultColor: Color
-    //) =
-    //    fun (validationResults: Impl.TestRunSummary) -> 
-    //        validationResults
-    //        |> BadgeCreation.ofTestResults(
-    //            labelText,
-    //            ?ValueSuffix = ValueSuffix,
-    //            ?Thresholds = Thresholds,
-    //            ?DefaultColor = DefaultColor
-    //        )
-    //        |> fun b -> b.WriteBadge(path)
-
-    //static member ValidationPipeline(
-    //    jUnitPath: string,
-    //    badgePath: string,
-    //    labelText: string,
-    //    ?ValueSuffix: string,
-    //    ?Thresholds: Map<int, Color>,
-    //    ?DefaultColor: Color
-    //) =
-    //    fun (validationCases: Test) ->
-
-    //        let results = 
-    //            validationCases
-    //            |> Execute.Validation
-
-    //        results
-    //        |> Execute.JUnitSummaryCreation(jUnitPath)
-
-    //        results
-    //        |> Execute.BadgeCreation(badgePath, labelText, ?ValueSuffix = ValueSuffix, ?Thresholds = Thresholds, ?DefaultColor = DefaultColor)
-
-    //static member ValidationPipeline(
-    //    basePath: string,
-    //    packageName: string,
-    //    ?BadgeLabelText: string,
-    //    ?ValueSuffix: string,
-    //    ?Thresholds: Map<int, Color>,
-    //    ?DefaultColor: Color
-    //) =
-    //    fun (validationCases: Test) ->
-
-    //        let resultFolder = Path.Combine(basePath, ".arc-validate-results", packageName)
-    //        let badgePath = Path.Combine(resultFolder, "badge.svg")
-    //        let jUnitPath = Path.Combine(resultFolder, "validation_report.xml")
-
-    //        Directory.CreateDirectory(resultFolder) |> ignore
-
-    //        let results = 
-    //            validationCases
-    //            |> Execute.Validation
-
-    //        results
-    //        |> Execute.JUnitSummaryCreation(jUnitPath)
-
-    //        let labelText = defaultArg BadgeLabelText packageName
-
-    //        results
-    //        |> Execute.BadgeCreation(badgePath, labelText, ?ValueSuffix = ValueSuffix, ?Thresholds = Thresholds, ?DefaultColor = DefaultColor)
-

@@ -11,16 +11,16 @@ keywords = [
     "profile crate"
 ]
 dependencies = [
-    anybadge
+    "anybadge"
 ]
 
-[project.urls]
-Repository = "https://github.com/hlweil/valipal"
+
 
 [dependency-groups]
 dev = [
     "pytest>=8.1.1,<9",
-    "twine>=4.0.2"
+    "twine>=4.0.2",
+    "fable_library>=5.3.0"
 ]
 
 [tool.poetry]
