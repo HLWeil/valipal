@@ -9,6 +9,8 @@ let all = testList "All" [
     Serialization.Tests.summaryJson
     TestRunner.Tests.testRunner
     Frontmatter.Tests.frontmatter
+    Execution.Tests.execution
+    Execution.Tests.badgeCreation
 ]
 
 
