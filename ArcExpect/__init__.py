@@ -80,6 +80,7 @@ from .py.AVPRIndex.domain import (
     ValidationPackageMetadata_getSemanticVersionString_58FC932 as semantic_version,
 )
 from .py.AVPRIndex.frontmatter import (
+    AVPRIndex_Domain_ValidationPackageMetadata__ValidationPackageMetadata_extractFromScript_Static_Z721C83C5 as _metadata_from_script,
     FrontmatterLanguage_FSharpFrontmatter,
     FrontmatterLanguage_PythonFrontmatter,
     FrontmatterLanguage_fromString_Z721C83C5 as _frontmatter_language_from_string,
@@ -270,6 +271,11 @@ class Setup:
         return _metadata_from_frontmatter(frontmatter, language)
 
     @staticmethod
+    def metadata_from_script(script_path: str) -> ValidationPackageMetadata:
+        """Read metadata from the leading frontmatter of a ``.py`` or ``.fsx`` script."""
+        return _metadata_from_script(script_path)
+
+    @staticmethod
     def validation_package(
         metadata: ValidationPackageMetadata,
         *,
@@ -277,6 +283,20 @@ class Setup:
         non_critical: Iterable[Any] | None = None,
     ) -> ARCValidationPackage:
         return _create_validation_package(metadata, _tests(critical), _tests(non_critical))
+
+    @staticmethod
+    def validation_package_from_script(
+        script_path: str,
+        *,
+        critical: Iterable[Any] | None = None,
+        non_critical: Iterable[Any] | None = None,
+    ) -> ARCValidationPackage:
+        """Create a validation package using metadata parsed from its script frontmatter."""
+        return Setup.validation_package(
+            Setup.metadata_from_script(script_path),
+            critical=critical,
+            non_critical=non_critical,
+        )
 
 
 class Execute:

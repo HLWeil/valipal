@@ -8,8 +8,9 @@ authors = [
 requires-python = ">=3.11"
 readme = "README.md"
 keywords = [
-    "ro-crate",
-    "profile crate"
+    "validation",
+    "arc",
+    "avpr",
 ]
 dependencies = [
     "fable_library>=5.3.0",

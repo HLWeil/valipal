@@ -13,6 +13,11 @@ type Setup =
     ) =
         ValidationPackageMetadata.extractFromString programmingLanguage frontmatter
 
+    static member MetadataFromScript(
+        scriptPath: string
+    ) =
+        ValidationPackageMetadata.extractFromScript scriptPath
+
     static member ValidationPackage(
         metadata: ValidationPackageMetadata,
         ?CriticalValidationCases: TestCase list,
@@ -22,6 +27,17 @@ type Setup =
             metadata = metadata,
             ?CriticalValidationCasesList = CriticalValidationCases,
             ?NonCriticalValidationCasesList = NonCriticalValidationCases
+        )
+
+    static member ValidationPackageFromScript(
+        scriptPath: string,
+        ?CriticalValidationCases: TestCase list,
+        ?NonCriticalValidationCases: TestCase list
+    ) =
+        Setup.ValidationPackage(
+            metadata = Setup.MetadataFromScript(scriptPath),
+            ?CriticalValidationCases = CriticalValidationCases,
+            ?NonCriticalValidationCases = NonCriticalValidationCases
         )
 
     static member ValidationPackage(
