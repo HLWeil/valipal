@@ -1,3 +1,6 @@
+> [!NOTE]
+> This GitHub repo is only a placeholder during development and testing. The code contained will be moved into a proper in the [DataPLANT](https://github.com/nfdi4plants) organization, e.g. into https://github.com/nfdi4plants/arc-validate.
+
 # ArcExpect
 
 ArcExpect helps authors write ARC validation packages in Python. A package is a
